@@ -1,0 +1,88 @@
+@import "_config.scss";
+//post list style
+.myposts{
+  margin: 5vh;
+  .mypost{
+    background-color: white;
+    margin: 5vh auto;
+    display: flex;
+    width: 180vh;
+    height: 15vh;
+    @include border-radius;
+
+    h2{
+      width: 30vh;
+      margin: {top: 4vh; left: 5vh; right: 5vh;}
+      font-size: 30px;
+    }
+
+    p{
+      width: 100vh;
+      padding: {top: 3vh; left: 3vh; bottom: 2vh; right: 6vh;}
+    }
+
+    .command{
+      margin: {left: 20vh;}
+      font-size: 16px;
+
+      .favo,.delete,.show{
+        form{
+          input{
+            width: 12vh;
+            margin: {top: 1vh; left: 3vh;}
+            background-color: white;
+            @include border-radius;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//post create style
+.post_create{
+  @include center;
+  height: 90vh;
+
+  p{
+    color: $error-color;
+    padding: {top: 5vh; bottom: 5vh;}
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+
+    textarea{
+      width: 360px;
+      height: 120px;
+      margin: 5vh auto;
+      padding: 3vh;
+      @include border-radius;
+    }
+
+    input{
+      @include submit(60px);
+    }
+  }
+}
+
+//post delete style
+.delete_contents
+{
+  background-color: white;
+  width: 360px;
+  height: 140px;
+  padding: {top: 1vh; bottom: 1vh; left: 3vh; right: 3vh;}
+  @include center(10vh);
+  @include border-radius;
+
+  p{
+    padding: {top: 2vh;}
+  }
+  .btn
+  {
+    @include submit(60px);
+  }
+}

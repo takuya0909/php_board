@@ -1,0 +1,96 @@
+//post/show
+.show{
+
+  .post-user{
+    width: 70vh;
+    height: 30vh;
+    margin: {top: 5vh; left: 70vh;}
+    background-color: white;
+    @include border-radius;
+
+   .post-name,.post-post{
+     padding: 3vh;
+
+   }
+
+   .post-name{
+     font-size: 20px;
+     font-weight: bold;
+     border-bottom:1px solid rgb(212, 207, 207) ;
+     @include center;
+   }
+
+   .commnet-btn{
+    width: 20vh;
+    height: 4vh;
+    margin: {left: 46vh; top: 4vh;}
+    background-color:$header-background-color;
+    @include border-radius;
+   }
+  }
+}
+
+.comments{
+    background-color: white;
+    margin: 3vh auto;
+    display: flex;
+    width: 100vh;
+    height: 8vh;
+    @include border-radius;
+
+  .comment-user
+  {
+      width: 20vh;
+      margin: {top: 2vh; left: 5vh; right: 5vh;}
+      font-size: 20px;
+  }
+
+  .comment
+  {
+     width: 100vh;
+     padding: {top: 2vh; left: 2vh; bottom: 2vh; right: 6vh;}
+  }
+
+  .delete
+  {
+    form
+    {
+      input
+      {
+        width: 12vh;
+        margin: {top: 2vh; right: 1vh;}
+        background-color: white;
+        @include border-radius;
+      }
+
+    }
+  }
+}
+
+//comment/create
+.comment-create{
+  @include center;
+  height: 90vh;
+
+  p{
+    color: $error-color;
+    padding: {top: 5vh; bottom: 5vh;}
+  }
+
+  .comment-form{
+    display: flex;
+    flex-direction: column;
+
+    .comment{
+      width: 360px;
+      height: 120px;
+      margin: 5vh auto;
+      padding: 3vh;
+      @include border-radius;
+    }
+
+    .comment-btn{
+      @include submit(120px);
+    }
+  }
+}

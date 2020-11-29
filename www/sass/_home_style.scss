@@ -1,0 +1,108 @@
+@import "_config.scss";
+
+//home/header
+.home_header{
+  height: $headre-height;
+  background-color: $header-background-color;
+  display: flex;
+
+  a{
+    height: $headre-link-height;
+    display: inline-block;
+    color: $font-color;
+
+    &.link-home{
+      font-size: 5vh;
+      font-weight: bolder;
+      margin: {top: 3vh; right: 135vh; left: 5vh;}
+    }
+
+    &.link-sing,&.link-login{
+      font-size: 3vh;
+      line-height: 1vh;
+      margin: {top: 6vh; right: 5vh;}
+    }
+  }
+}
+
+//home/footer
+footer{
+  height: $footer-height;
+  @include center;
+}
+
+//home/index,singup,login
+.view-home{
+  height:$main-height;
+
+  .title{
+    text-align: center;
+    font-size: 100px;
+    height: 50vh;
+    line-height: 60vh;
+
+    span{
+      height: 10vh;
+      line-height: 10vh;
+      color: #fff;
+      display: inline-block;
+      @include title;
+    }
+  }
+
+
+  //home/index,singup,login   form
+  .error{
+    @include center;
+    color: rgb(202, 12, 12);
+    margin: {bottom: 7vh;}
+  }
+
+  .login_form{
+    display: flex;
+    margin: {right: 45vh; left: 45vh;}
+
+    p{
+      margin: {right: 7vh;}
+
+      .name,.pass{
+        @include border-radius;
+        width: 40vh;
+        font-size: 15px;
+        padding: {left: 5px;}
+      }
+    }
+  }
+
+  .sing_form{
+    display: flex;
+    margin: {left: 25vh; right: 25vh;}
+
+    p{
+      margin: {right: 2vh;}
+
+      .name,.pass,.mail{
+        @include border-radius;
+        width: 40vh;
+        font-size: 15px;
+        padding: {left: 5px;}
+      }
+    }
+  }
+
+  .submit{
+    @include center;
+    margin: {top: 7vh; right: 12vh;}
+
+    input{
+      background-color: rgb(187, 193, 248);
+      height: 7vh;
+      width: 14vh;
+      border-radius: 50px;
+
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}

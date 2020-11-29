@@ -1,0 +1,658 @@
+body {
+  background-color: #d4cfcf;
+}
+
+.home_header {
+  height: 10vh;
+  background-color: #bbc1f8;
+  display: flex;
+}
+
+.home_header a {
+  height: 5vh;
+  display: inline-block;
+  color: white;
+}
+
+.home_header a.link-home {
+  font-size: 5vh;
+  font-weight: bolder;
+  margin-top: 3vh;
+  margin-right: 135vh;
+  margin-left: 5vh;
+}
+
+.home_header a.link-sing, .home_header a.link-login {
+  font-size: 3vh;
+  line-height: 1vh;
+  margin-top: 6vh;
+  margin-right: 5vh;
+}
+
+footer {
+  height: 5vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.view-home {
+  height: 85vh;
+}
+
+.view-home .title {
+  text-align: center;
+  font-size: 100px;
+  height: 50vh;
+  line-height: 60vh;
+}
+
+.view-home .title span {
+  height: 10vh;
+  line-height: 10vh;
+  color: #fff;
+  display: inline-block;
+  animation: rollkAnime 3s linear infinite;
+  text-shadow: 0 1px #bbb, 0 2px #aaa, 0 3px #999, 0 4px #888, 0 5px #777, 0 6px #666, 0 7px #555, 0 8px #444, 0 9px #333, 0 10px 8px #000;
+}
+
+@keyframes rollkAnime {
+  50% {
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  100% {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+}
+
+.view-home .error {
+  margin: 0 auto;
+  text-align: center;
+  color: #ca0c0c;
+  margin-bottom: 7vh;
+}
+
+.view-home .login_form {
+  display: flex;
+  margin-right: 45vh;
+  margin-left: 45vh;
+}
+
+.view-home .login_form p {
+  margin-right: 7vh;
+}
+
+.view-home .login_form p .name, .view-home .login_form p .pass {
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 40vh;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.view-home .sing_form {
+  display: flex;
+  margin-left: 25vh;
+  margin-right: 25vh;
+}
+
+.view-home .sing_form p {
+  margin-right: 2vh;
+}
+
+.view-home .sing_form p .name, .view-home .sing_form p .pass, .view-home .sing_form p .mail {
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 40vh;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.view-home .submit {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 7vh;
+  margin-right: 12vh;
+}
+
+.view-home .submit input {
+  background-color: #bbc1f8;
+  height: 7vh;
+  width: 14vh;
+  border-radius: 50px;
+}
+
+.view-home .submit input:hover {
+  color: white;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+
+.menu__item {
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.menu__item a {
+  color: #fff;
+}
+
+.menu__item form input {
+  background: #555;
+}
+
+.menu {
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+
+.menu.is-active {
+  transform: translateX(0);
+}
+
+body {
+  background-color: #d4cfcf;
+}
+
+.user_header {
+  height: 10vh;
+  background-color: #bbc1f8;
+  display: flex;
+}
+
+.user_header .title {
+  width: 50vh;
+  font-size: 5vh;
+  font-weight: bolder;
+  margin-top: 3vh;
+  margin-right: 5vh;
+}
+
+.user_header nav ul {
+  display: flex;
+}
+
+.user_header nav ul li {
+  margin-top: 4vh;
+  margin-left: 15vh;
+}
+
+.user_header nav ul li a {
+  color: black;
+}
+
+.user_header nav ul li a:hover {
+  color: white;
+}
+
+.user_header .login_user {
+  width: 40vh;
+  margin-top: 6vh;
+  margin-left: 25vh;
+}
+
+.user_date {
+  height: 15vh;
+  display: flex;
+  background-color: #8b8585;
+}
+
+.user_date h1 {
+  border-right: solid 1px black;
+  font-size: 40px;
+  width: 50vh;
+  padding-top: 4vh;
+  padding-left: 6vh;
+}
+
+.user_date p {
+  border-right: solid 1px black;
+  font-size: 15px;
+  width: 100vh;
+  padding: 3vh;
+}
+
+.user_date .data tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_date .data tr td {
+  margin-top: 1.5vh;
+  margin-left: 10vh;
+}
+
+.update {
+  height: 90vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.update p {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.update p input {
+  width: 40vh;
+  height: 4vh;
+  border: solid 2px black;
+}
+
+.update p .submit {
+  width: 60px;
+  height: 30px;
+  margin: 5vh auto;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.update .comment {
+  display: flex;
+  flex-direction: column;
+  padding-right: 34vh;
+}
+
+.update .comment textarea {
+  width: 40vh;
+  height: 10vh;
+  margin-left: 88vh;
+  border: solid 2px black;
+}
+
+.delete-user {
+  width: 360px;
+  height: 120px;
+  padding: 3vh;
+  margin: 10vh auto;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.delete-user .delete-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.delete-user .delete-text {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.delete-user .delete-btn {
+  width: 60px;
+  height: 30px;
+  margin: 5vh auto;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.users_index {
+  margin: 5vh;
+}
+
+.users_index .user {
+  background-color: white;
+  margin: 5vh auto;
+  display: flex;
+  width: 180vh;
+  height: 15vh;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.users_index .user h2 {
+  width: 30vh;
+  margin-top: 4vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  font-size: 30px;
+}
+
+.users_index .user p {
+  width: 100vh;
+  padding-top: 3vh;
+  padding-left: 3vh;
+  padding-bottom: 2vh;
+  padding-right: 6vh;
+}
+
+.users_index .user .command {
+  margin-left: 20vh;
+  font-size: 16px;
+}
+
+.users_index .user .command .follow form input, .users_index .user .command .show form input {
+  width: 12vh;
+  margin-top: 1vh;
+  margin-left: 3vh;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+body {
+  background-color: #d4cfcf;
+}
+
+.myposts {
+  margin: 5vh;
+}
+
+.myposts .mypost {
+  background-color: white;
+  margin: 5vh auto;
+  display: flex;
+  width: 180vh;
+  height: 15vh;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.myposts .mypost h2 {
+  width: 30vh;
+  margin-top: 4vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  font-size: 30px;
+}
+
+.myposts .mypost p {
+  width: 100vh;
+  padding-top: 3vh;
+  padding-left: 3vh;
+  padding-bottom: 2vh;
+  padding-right: 6vh;
+}
+
+.myposts .mypost .command {
+  margin-left: 20vh;
+  font-size: 16px;
+}
+
+.myposts .mypost .command .favo form input, .myposts .mypost .command .delete form input, .myposts .mypost .command .show form input {
+  width: 12vh;
+  margin-top: 1vh;
+  margin-left: 3vh;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.post_create {
+  margin: 0 auto;
+  text-align: center;
+  height: 90vh;
+}
+
+.post_create p {
+  color: red;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.post_create form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post_create form textarea {
+  width: 360px;
+  height: 120px;
+  margin: 5vh auto;
+  padding: 3vh;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.post_create form input {
+  width: 60px;
+  height: 30px;
+  margin: 5vh auto;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.delete_contents {
+  background-color: white;
+  width: 360px;
+  height: 140px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  margin: 10vh auto;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.delete_contents p {
+  padding-top: 2vh;
+}
+
+.delete_contents .btn {
+  width: 60px;
+  height: 30px;
+  margin: 5vh auto;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.show .post-user {
+  width: 70vh;
+  height: 30vh;
+  margin-top: 5vh;
+  margin-left: 70vh;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.show .post-user .post-name, .show .post-user .post-post {
+  padding: 3vh;
+}
+
+.show .post-user .post-name {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #d4cfcf;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.show .post-user .commnet-btn {
+  width: 20vh;
+  height: 4vh;
+  margin-left: 46vh;
+  margin-top: 4vh;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.comments {
+  background-color: white;
+  margin: 3vh auto;
+  display: flex;
+  width: 100vh;
+  height: 8vh;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.comments .comment-user {
+  width: 20vh;
+  margin-top: 2vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  font-size: 20px;
+}
+
+.comments .comment {
+  width: 100vh;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 6vh;
+}
+
+.comments .delete form input {
+  width: 12vh;
+  margin-top: 2vh;
+  margin-right: 1vh;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.comment-create {
+  margin: 0 auto;
+  text-align: center;
+  height: 90vh;
+}
+
+.comment-create p {
+  color: red;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.comment-create .comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-create .comment-form .comment {
+  width: 360px;
+  height: 120px;
+  margin: 5vh auto;
+  padding: 3vh;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.comment-create .comment-form .comment-btn {
+  width: 120px;
+  height: 30px;
+  margin: 5vh auto;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.conut {
+  margin-top: 3vh;
+  margin-left: 3vh;
+}
+
+.page {
+  margin-left: 20vh;
+}
+
+.pagination {
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: white;
+  width: 40vh;
+  height: 5vh;
+  padding-top: 1vh;
+  padding-left: 1vh;
+  position: fixed;
+  top: 570px;
+  left: 500px;
+}
+
+.pagination .pagination_num {
+  color: black;
+}
+
+.pagination .pagination_num:visited {
+  color: aqua;
+}
+
+body {
+  background-color: #d4cfcf;
+}
+
+.search {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search .select_search {
+  display: flex;
+}
+
+.search .select_search p {
+  padding-left: 5vh;
+  padding-right: 3vh;
+}
+
+.search .select_search p a {
+  color: black;
+}
+
+.search .search_input form .search_input {
+  height: 5vh;
+  padding-left: 1vh;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.search .search_input form .search_submit {
+  width: 10vh;
+  height: 30px;
+  margin: 5vh auto;
+  background-color: #bbc1f8;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.magin {
+  margin: 0;
+}
+
+.seach_error {
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+}

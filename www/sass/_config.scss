@@ -1,0 +1,65 @@
+$font-color:rgb(255, 255, 255);
+$error-color:red;
+
+//home header
+$headre-height:10vh;
+$headre-link-height:5vh;
+$header-background-color:rgb(187, 193, 248);
+//home footer
+$footer-height:5vh;
+//home main
+$main-height:85vh;
+$main-background-color:rgb(212, 207, 207);
+
+
+
+$content-height:90vh;
+$content-background-color:rgb(139, 133, 133);
+
+@mixin border-radius {
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+@mixin  submit($value){
+  width: $value;
+  height: 30px;
+  margin: 5vh auto;
+  background-color:rgb(187, 193, 248);
+  @include border-radius;
+}
+
+@mixin  center($value:0){
+  margin: $value auto;
+  text-align: center;
+}
+
+@mixin title {
+  @keyframes rollkAnime {
+    50% {
+      color    :#fff;
+      transform: rotateY(180deg);
+    }
+    100% {
+            color    :#fff;
+            transform: rotateY(360deg);
+    }
+  }
+
+  animation: rollkAnime 3s linear infinite;
+  text-shadow:
+      0 1px #bbb,
+      0 2px #aaa,
+      0 3px #999,
+      0 4px #888,
+      0 5px #777,
+      0 6px #666,
+      0 7px #555,
+      0 8px #444,
+      0 9px #333,
+      0 10px 8px #000;
+}
+
+body{
+  background-color: $main-background-color;
+}

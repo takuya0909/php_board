@@ -1,0 +1,166 @@
+@import "_config.scss";
+
+// login header
+.user_header{
+  height: $headre-height;
+  background-color: $header-background-color;
+  display: flex;
+
+  .title{
+    width: 50vh;
+    font-size: 5vh;
+    font-weight: bolder;
+    margin: {top: 3vh; right: 5vh;}
+  }
+
+  nav{
+    ul{
+      display: flex;
+
+      li{
+        margin: {top: 4vh; left: 15vh;}
+
+        a{
+          color: rgb(0, 0, 0);
+          &:hover{color: white;}
+        }
+      }
+
+    }
+  }
+
+  .login_user{
+    width: 40vh;
+    margin: {top: 6vh; left: 25vh;}
+  }
+}
+
+//user date
+.user_date{
+  height: 15vh;
+  display: flex;
+  background-color:rgb(139, 133, 133);
+
+  h1{
+    border-right:solid 1px black;
+    font-size: 40px;
+    width: 50vh;
+    padding: {top: 4vh; left: 6vh;}
+  }
+
+  p{
+    border-right:solid 1px black;
+    font-size: 15px;
+    width: 100vh;
+    padding: 3vh;
+  }
+
+  .data{
+    tr{
+      display: flex;
+      flex-direction: column;
+      td{
+        margin: {top: 1.5vh; left: 10vh;}
+      }
+    }
+  }
+}
+
+//user update style
+.update{
+  height: $content-height;
+  padding: {top: 5vh; bottom: 5vh;}
+  @include center;
+
+  p{
+    margin: {top:5vh; bottom: 5vh;}
+
+    input{
+      width: 40vh;
+      height: 4vh;
+      border:solid 2px black;
+    }
+
+    .submit{
+      @include submit(60px);
+    }
+  }
+
+  .comment{
+    display: flex;
+    flex-direction: column;
+    padding: {right: 34vh;}
+
+    textarea{
+      width: 40vh;
+      height: 10vh;
+      margin: {left: 88vh;}
+      border:solid 2px black;
+    }
+  }
+}
+
+//user delete style
+.delete-user{
+  width: 360px;
+  height: 120px;
+  padding: 3vh;
+  @include center(10vh);
+  @include border-radius;
+
+  .delete-name{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .delete-text{
+    margin: {top: 3vh; bottom:3vh ;}
+  }
+
+  .delete-btn{
+    @include submit(60px);
+  }
+}
+
+//user index style
+.users_index
+{
+  margin: 5vh;
+
+  .user
+  {
+    background-color: white;
+    margin: 5vh auto;
+    display: flex;
+    width: 180vh;
+    height: 15vh;
+    @include border-radius;
+
+    h2{
+      width: 30vh;
+      margin: {top: 4vh; left: 5vh; right: 5vh;}
+      font-size: 30px;
+    }
+
+    p{
+      width: 100vh;
+      padding: {top: 3vh; left: 3vh; bottom: 2vh; right: 6vh;}
+    }
+
+    .command{
+      margin: {left: 20vh;}
+      font-size: 16px;
+
+      .follow,.show{
+        form{
+          input{
+            width: 12vh;
+            margin: {top: 1vh; left: 3vh;}
+            background-color: white;
+            @include border-radius;
+          }
+        }
+      }
+    }
+  }
+}

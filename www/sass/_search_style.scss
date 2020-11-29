@@ -1,0 +1,45 @@
+@import "_config.scss";
+
+.search
+{
+  @include center();
+  .select_search
+  {
+    display: flex;
+    p{
+      padding: {left: 5vh; right: 3vh;}
+      a
+      {
+        color: black;
+      }
+    }
+  }
+
+  .search_input
+  {
+    form
+    {
+      .search_input
+      {
+        height: 5vh;
+        padding: {left: 1vh;}
+        @include border-radius;
+      }
+      .search_submit
+      {
+        @include submit(10vh);
+      }
+    }
+  }
+}
+
+.magin
+{
+  margin: 0;
+}
+
+.seach_error
+{
+  @include center();
+  color: red;
+}

@@ -1,0 +1,30 @@
+.conut
+{
+  margin: {top: 3vh; left: 3vh;}
+}
+
+.page
+{
+  margin: { left: 20vh;}
+}
+
+.pagination
+  {
+    @include border-radius;
+    background-color: white;
+    width: 40vh;
+    height: 5vh;
+    padding: {top: 1vh; left: 1vh;}
+    position:  fixed;
+      top: 570px;
+      left: 500px;
+
+    .pagination_num
+    {
+      color:  black;
+      &:visited
+      {
+        color: aqua;
+      }
+    }
+}
